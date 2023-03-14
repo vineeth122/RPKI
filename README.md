@@ -1,7 +1,4 @@
 # BGP Validation with RPKI
-
-This project was a part of a submission to the cybersecurity course CY6740 Network Security. The goal of the project was to understand BGP UPDATEs (used to advertise and withdraw inter-AS routes), learn BGP advertisement validation using RPKI ROAs and identifying malicious BGP announcements. The assignment required students to validate each of the BGP UPDATE messages observed in the given files against the RPKI ROAs provided.
-
 ## Border Gateway Protocol (BGP) Security
 The BGP is the standard inter-AS routing protocol. While it has mostly succeeded in allowing network operators to automatically route around network failures, its security model is fundamentally based on mutual trust between BGP peers. But, malicious ASes can advertise specially-crafted routes in an attempt to influence downstream route selection decisions, directing traffic that would not otherwise see these ASes. If malicious routes are accepted and traffic is redirected, malicious ASes can either inspect that traffic (metadata/traffic and/or content analysis) or simply drop the traffic, resulting in a large-scale denial-of-service attack.
 
